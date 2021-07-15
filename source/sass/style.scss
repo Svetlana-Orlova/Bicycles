@@ -1,3 +1,7 @@
-h1 {
-  color: red;
-}
+@import "./fonts";
+@import "./global";
+@import "./vendor/normalize.css";
+@import "./blocks/page-header";
+@import "./blocks/page-title";
+@import "./blocks/advantages";
+@import "./blocks/footer";

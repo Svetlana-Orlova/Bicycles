@@ -50,6 +50,18 @@
   margin-top: 0;
   margin-left: 0;
   padding-left: 0;
+  width: fit-content;
+  opacity: 0.2;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (max-width: $tablet-width) {
     padding-top: 25px;

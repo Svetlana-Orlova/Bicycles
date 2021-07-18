@@ -49,6 +49,18 @@
     padding-right: 19px;
     padding-bottom: 13px;
   }
+
+  &:hover,
+  &:focus {
+    color: $black;
+    outline: 2px solid $blue;
+  }
+
+  &:active {
+    color: $black;
+    outline: 1px solid $blue;
+    opacity: 0.4;
+  }
 }
 
 .form button {

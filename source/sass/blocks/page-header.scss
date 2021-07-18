@@ -41,6 +41,15 @@
   background-size: 30px 30px;
   width: 50px;
   height: 50px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -51,6 +60,15 @@
   width: 50px;
   height: 52px;
   background-color: $white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .main-nav__wrapper {
@@ -127,11 +145,12 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    color: $blue;
+    opacity: 1;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 
   &::after {

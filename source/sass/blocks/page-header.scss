@@ -1,21 +1,24 @@
 .page-header {
-  margin-top: 11px;
+  color: $white;
   position: absolute;
-  top: 0;
-  left: 0;
   font-weight: 300;
   font-size: 16px;
-  color: $white;
+  line-height: 32px;
+  letter-spacing: -0.005em;
   background: transparent;
-  margin: auto;
   width: 100%;
+  top: 0;
+  left: -2px;
+  margin: auto;
 
   @media (max-width: $tablet-width) {
-    margin-right: 0;
+    color: $dark-grey;
     position: static;
     font-weight: 400;
     font-size: 20px;
-    color: $dark-grey;
+    line-height: 1.5;
+    left: 0;
+    margin-right: 0;
   }
 }
 
@@ -23,15 +26,15 @@
   display: none;
 
   @media (max-width: $tablet-width) {
-  position: absolute;
-  display: block;
-  border: none;
-  background-color: $blue;
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  z-index: 3;
+    position: absolute;
+    display: block;
+    border: none;
+    background-color: $blue;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    z-index: 3;
   }
 }
 
@@ -56,11 +59,11 @@
   background-image: url("../img/icon-cross.svg");
   background-size: 100%;
   background-position: center;
-  padding: 0;
-  width: 50px;
-  height: 52px;
   background-color: $white;
   opacity: 0.2;
+  width: 50px;
+  height: 52px;
+  padding: 0;
 
   &:hover,
   &:focus {
@@ -73,29 +76,29 @@
 }
 
 .main-nav__wrapper {
-  margin-top: 0;
   width: 873px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 0;
 
   @media (max-width: $tablet-width) {
-    margin-left: auto;
-    margin-right: 0;
     position: absolute;
     width: 50%;
     min-height: 568px;
-    top: 0;
-    right: 0;
     background-color: $white;
     border-bottom: none;
     z-index: 2;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
   }
 }
 
@@ -104,31 +107,33 @@
 }
 
 .main-nav__list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   height: 100%;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 71px;
   }
 }
 
 .main-nav__item {
-  margin-top: 0;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 9px;
   padding-left: 20px;
+  margin-top: 0;
 
   @media (max-width: $tablet-width) {
     background-color: $grey-bg;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-right: 35px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     padding-left: 16px;
     margin-top: 30px;
   }
@@ -161,14 +166,14 @@
       display: block;
       content: "";
       position: absolute;
-      right: 0;
-      top: 10px;
       height: 8px;
       width: 8px;
       background-color: transparent;
-      border-bottom: 1px solid $grey;
-      border-right: 1px solid $grey;
+      border-bottom: 2px solid $grey;
+      border-right: 2px solid $grey;
       transform: rotate(-45deg);
+      right: -9px;
+      top: 8px;
     }
   }
 }
@@ -185,4 +190,8 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.fixed {
+  overflow-y: hidden;
 }

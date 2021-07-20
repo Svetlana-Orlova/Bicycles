@@ -1,53 +1,78 @@
 .form {
-  margin-top: 0;
-  margin-left: 172px;
-  width: 327px;
+  width: 324px;
   box-sizing: border-box;
+  margin-left: 161px;
+  margin-top: 0;
 
   @media (max-width: $tablet-width) {
-    width: 321px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
+    width: 355px;
     text-align: center;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 
 .form p {
+  color: $white;
   font-weight: 600;
   font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
   text-align: center;
-  color: $white;
   margin-bottom: 0;
+  margin-top: 9px;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
     color: $black;
+    margin-top: 0;
+  }
+}
+
+.form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 11px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
   }
 }
 
 .form input {
+  color: $black3;
   font-size: 15px;
   font-weight: 400;
-  color: $black3;
   background-color: $white;
-  border: 1px solid $grey-border;
-  box-sizing: border-box;
-  border-radius: 6px;
-  padding-top: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 14px;
   width: 100%;
+  box-sizing: border-box;
+  border: 1px solid $grey-border;
+  border-radius: 6px;
+  padding-top: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 13px;
   margin-top: 20px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 13px;
-    padding-left: 25px;
+    padding-left: 21px;
     padding-right: 19px;
-    padding-bottom: 13px;
+    padding-top: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
   }
 
   &:hover,
@@ -67,6 +92,7 @@
   color: $black;
   font-weight: 600;
   font-size: 15px;
+  line-height: 21px;
   align-items: center;
   text-align: center;
   background-color: $blue;
@@ -74,10 +100,19 @@
   border-radius: 6px;
   border-color: transparent;
   width: 100%;
-  padding-bottom: 14px;
-  padding-top: 14px;
-  margin-top: 22px;
   cursor: pointer;
+  padding-bottom: 12px;
+  padding-top: 15px;
+  margin-top: 19px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 15px;
+    padding-top: 12px;
+  }
 
   &:hover,
   &:focus {

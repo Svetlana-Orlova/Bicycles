@@ -1,22 +1,24 @@
 .facts {
-  margin-top: 150px;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 146px;
 
   @media (max-width: $tablet-width) {
     margin-top: 70px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 74px;
+    margin-top: 70px;
   }
 }
 
-.facts__title {
+.facts h2 {
+  color: $black1;
   font-weight: 600;
   font-size: 30px;
-  color: $black1;
+  line-height: 41px;
+  letter-spacing: -0.005em;
   text-align: center;
   margin: 0 auto;
 
@@ -26,44 +28,53 @@
 }
 
 .facts__list {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 38px;
   box-sizing: border-box;
-  padding-left: 137px;
-  padding-right: 137px;
   max-width: 1440px;
+  padding: 0;
+  padding-left: 122px;
+  padding-right: 122px;
+  margin-top: 43px;
   margin-left: auto;
   margin-right: auto;
 
   @media (max-width: $tablet-width) {
-    margin-top: 30px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 30px;
-    padding-left: 106px;
-    padding-right: 106px;
+    gap: 40px 35px;
+    padding-left: 94px;
+    padding-right: 94px;
+    margin-top: 30px;
   }
 
   @media (max-width: $mobile-width) {
     display: block;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 30px;
   }
 }
 
 .facts__item {
-  margin-top: 0;
   box-sizing: border-box;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 0;
 
   @media (max-width: $tablet-width) {
-    padding: 0;
+    margin: 0;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 35px;
+    margin-top: 45px;
+  }
+}
+
+.facts__item:first-child {
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
   }
 }
 
@@ -71,25 +82,37 @@
   color: $blue;
   font-weight: 700;
   font-size: 28px;
-  margin: 0;
+  line-height: 38px;
+  letter-spacing: -1.27273px;
   text-align: center;
+  margin: 0;
 }
 
 .facts__item p {
   font-weight: 400;
   font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
-  text-align: center;
-  letter-spacing: -0.5px;
+  margin-top: 15px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 9px;
+  }
+}
+
+.facts__item:first-child p {
+  margin-top: 18px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 17px;
+    margin-bottom: -10px;
   }
 }

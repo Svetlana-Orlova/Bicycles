@@ -1,15 +1,17 @@
 .video {
-  background-color: $dark-bg;
-  text-align: center;
   color: $white;
+  text-align: center;
+  background-color: $dark-bg;
 }
 
 .video h2 {
   font-weight: 600;
   font-size: 30px;
-  margin: 0;
+  line-height: 30px;
+  letter-spacing: -0.005em;
   padding: 0;
   padding-top: 120px;
+  margin: 0;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -24,34 +26,37 @@
 .video p {
   font-weight: 300;
   font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
   width: 340px;
   opacity: 0.7;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-left: auto;
   margin-right: auto;
 
   @media (max-width: $tablet-width) {
     width: 429px;
+    margin-top: 20px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
     box-sizing: border-box;
+    padding-left: 13px;
+    padding-right: 16px;
   }
 }
 
 .video__wrapper {
   position: relative;
-  height: 480px;
+  height: 465px;
 
   @media (max-width: $tablet-width) {
-    height: 237px;
+    height: 221px;
   }
 
   @media (max-width: $mobile-width) {
-    height: 163px;
+    height: 150px;
   }
 }
 
@@ -60,20 +65,20 @@
   height: 522px;
   background-color: $black;
   position: absolute;
-  top: 56px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
 
   @media (max-width: $tablet-width) {
     width: 503px;
     height: 282px;
-    top: 40px;
+    top: 24px;
   }
 
   @media (max-width: $mobile-width) {
     width: 288px;
     height: 162px;
-    top: 50px;
+    top: 37px;
   }
 }
 
@@ -85,22 +90,22 @@
   background-color: $blue;
   border-radius: 50%;
   border-color: transparent;
-  top: 67%;
+  cursor: pointer;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
   z-index: 5;
 
   @media (max-width: $tablet-width) {
     width: 90px;
     height: 90px;
-    top: 180px;
+    top: 165px;
   }
 
   @media (max-width: $mobile-width) {
     width: 65px;
     height: 65px;
-    top: 132px;
+    top: 117px;
   }
 
   &::after {
@@ -109,15 +114,15 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 9.1px 0 9.1px 15.8px;
+    border-width: 9px 0 9px 12px;
     border-color: transparent transparent transparent $black2;
     top: 50%;
     left: 26.6px;
     transform: translateY(-50%);
 
     @media (max-width: $tablet-width) {
-      border-width: 12.5px 0 12.5px 21.7px;
-      left: 36px;
+      border-width: 12px 0 12px 18px;
+      left: 38px;
     }
 
     @media (max-width: $mobile-width) {

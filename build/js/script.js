@@ -1,63 +1,66 @@
-"use strict";
-const body = document.body;
-const navMain = document.querySelector(".main-nav");
-const navToggle = document.querySelector(".main-nav__toggle");
-const anchors = document.querySelectorAll(".main-nav__item a");
-const inputs = document.querySelectorAll("input");
-const links = document.querySelectorAll(".page-main a");
-const buttons = document.querySelectorAll(".page-main button");
+(() => {
+  const body = document.body;
+  const navMain = document.querySelector('#main-nav');
+  const navToggle = document.querySelector('#nav-toggle');
+  const anchors = document.querySelectorAll('.main-nav__item a');
+  const inputs = document.querySelectorAll('input');
+  const links = document.querySelectorAll('.page-main a');
+  const buttons = document.querySelectorAll('.page-main button');
 
-navMain.classList.remove("main-nav--nojs");
-
-navToggle.addEventListener("click", () => {
-  if (navMain.classList.contains("main-nav--closed")) {
-    openMenu();
-  } else {
-    closeMenu();
+  if(document.getElementById('main-nav')&&document.getElementById('nav-toggle')&&document.getElementById('anchors')) {
+    navMain.classList.remove('main-nav--nojs');
   }
-});
 
-const openMenu = () => {
-  navMain.classList.remove("main-nav--closed");
-    navMain.classList.add("main-nav--opened");
-    body.classList.add("fixed");
+  const disableItems = (items) => {
+    items.forEach((item) => {
+      item.setAttribute('disabled', true);
+    });
+  };
+
+  const enableItems = (items) => {
+    items.forEach((item) => {
+      item.removeAttribute('disabled');
+    });
+  };
+
+  const openMenu = () => {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+    body.classList.add('fixed');
     disableItems(inputs);
     disableItems(links);
     disableItems(buttons);
-}
+  };
 
-const closeMenu = () => {
-  navMain.classList.add("main-nav--closed");
-    navMain.classList.remove("main-nav--opened");
-    body.classList.remove("fixed");
+  const closeMenu = () => {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+    body.classList.remove('fixed');
     enableItems(inputs);
     enableItems(links);
     enableItems(buttons);
-}
+  };
 
-const disableItems = (items) => {
-  items.forEach((item) => {
-    item.setAttribute(`disabled`, true);
+  navToggle.addEventListener('click', () => {
+    if (navMain.classList.contains('main-nav--closed')) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
   });
-};
 
-const enableItems = (items) => {
-  items.forEach((item) => {
-    item.removeAttribute(`disabled`);
-  });
-};
+  anchors.forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
 
-for (let anchor of anchors) {
-  anchor.addEventListener("click", (e) => {
-    e.preventDefault();
+      const sectionID = anchor.getAttribute('href').substr(1);
 
-    const sectionID = anchor.getAttribute("href").substr(1);
-
-    document.getElementById(sectionID).scrollIntoView({
-        behavior: "smooth",
-        section: "start"
+      document.getElementById(sectionID).scrollIntoView({
+        behavior: 'smooth',
+        section: 'start',
       });
 
-    closeMenu();
+      closeMenu();
+    });
   });
-};
+})();

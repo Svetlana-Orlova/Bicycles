@@ -89,7 +89,7 @@
   }
 
   &::before {
-    background-image: url(../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
     width: 26px;
     height: 20px;
     top: 1px;
@@ -111,7 +111,7 @@
   }
 
   &::before {
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     width: 22px;
     height: 24px;
     top: -3px;

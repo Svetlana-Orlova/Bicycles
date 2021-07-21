@@ -27,7 +27,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 32px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -54,7 +54,6 @@
     display: flex;
     gap: 0;
     flex-direction: row;
-    justify-content: space-between;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: -23px;
@@ -198,15 +197,15 @@
   }
 }
 
-.types__img--roadbike {
+.types__item--roadbike img {
   background-color: $dark-grey;
 }
 
-.types__img--mountainbike {
+.types__item--mountainbike img {
   background-color: $brown;
 }
 
-.types__img--childbike {
+.types__item--childbike img {
   background-color: $pink;
 }
 

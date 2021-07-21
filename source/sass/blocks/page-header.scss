@@ -4,7 +4,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   background: transparent;
   width: 100%;
   top: 0;
@@ -102,10 +102,6 @@
   }
 }
 
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-}
-
 .main-nav__list {
   list-style: none;
   display: flex;
@@ -185,6 +181,7 @@
 }
 
 .main-nav--nojs .main-nav__wrapper {
+  position: static;
   display: block;
 }
 

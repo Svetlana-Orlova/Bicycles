@@ -5,9 +5,10 @@ $mobile-width: 767px;
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
   align-content: start;
   min-width: 320px;
+  min-height: 100vh;
+  grid-template-rows: min-content 1fr min-content;
   margin: 0;
 }
 

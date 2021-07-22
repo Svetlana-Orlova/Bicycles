@@ -1,5 +1,5 @@
 .page-footer {
-  margin-top: 38px;
+  margin-top: auto;
   padding-bottom: 96px;
   text-align: center;
 
@@ -23,9 +23,11 @@
   padding: 0;
   padding-left: 25px;
   margin: 0;
+  margin-top: 38px;
 
   @media (max-width: $tablet-width) {
     padding-left: 30px;
+    margin-top: 0;
   }
 
   @media (max-width: $mobile-width) {

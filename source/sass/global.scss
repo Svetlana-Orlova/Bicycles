@@ -4,12 +4,17 @@ $mobile-width: 767px;
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-content: start;
   min-width: 320px;
   min-height: 100vh;
-  grid-template-rows: min-content 1fr min-content;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
 }
 
 a {

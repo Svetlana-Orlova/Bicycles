@@ -6,7 +6,7 @@
   background-color: $dark-bg;
   background-image: url("../img/bike-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   display: flex;
   flex-wrap: wrap;
@@ -63,19 +63,9 @@
 
 .banner__logo {
   width: fit-content;
-  cursor: pointer;
   padding-left: 0;
   margin-top: 0;
   margin-left: 0;
-
-  &:hover,
-  &:focus {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 
   @media (max-width: $tablet-width) {
     padding-top: 25px;

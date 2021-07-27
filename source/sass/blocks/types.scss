@@ -71,6 +71,7 @@
   position: relative;
   box-sizing: content-box;
   z-index: 5;
+  max-width: 342px;
 
   @media (max-width: $tablet-width) {
     padding-left: 25px;
@@ -215,6 +216,7 @@
   font-size: 22px;
   text-align: center;
   letter-spacing: -0.5px;
+  word-break: break-word;
   margin-bottom: 0;
   margin-top: 23px;
 

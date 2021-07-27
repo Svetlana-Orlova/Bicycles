@@ -4,12 +4,12 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    margin-top: 22px;
+    margin-top: 15px;
     padding-bottom: 55px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 31px;
+    margin-top: 16px;
     padding-bottom: 51px;
   }
 }
@@ -21,12 +21,12 @@
   justify-content: center;
   max-width: 1440px;
   padding: 0;
-  padding-left: 25px;
   margin: 0;
-  margin-top: 38px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 30px;
     margin-top: 0;
   }
 
@@ -38,6 +38,59 @@
 
 .page-footer__item {
   position: relative;
+  min-width: 256px;
+  margin-left: 28px;
+  margin-right: 24px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 32px;
+    margin-right: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+// .page-footer__item a {
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     background-color: transparent;
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     background-position: center;
+//   }
+
+//   @media (max-width: $mobile-width) {
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-top: 11px;
+//   }
+// }
+
+// .page-footer__item:not(:first-child) {
+//   margin-left: 128px;
+
+//   @media (max-width: $tablet-width) {
+//     margin-left: 130px;
+//   }
+
+//   @media (max-width: $mobile-width) {
+//     margin-left: auto;
+//     margin-top: 24px;
+//   }
+// }
+
+.page-footer__item a {
+  position: relative;
+  color: $black;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  cursor: pointer;
+  padding-left: 47px;
 
   &::before {
     position: absolute;
@@ -51,29 +104,9 @@
   @media (max-width: $mobile-width) {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 11px;
+    padding-left: 25px;
   }
-}
-
-.page-footer__item:not(:first-child) {
-  margin-left: 128px;
-
-  @media (max-width: $tablet-width) {
-    margin-left: 130px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-left: auto;
-    margin-top: 24px;
-  }
-}
-
-.page-footer__item a {
-  color: $black;
-  opacity: 0.5;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -87,18 +120,21 @@
 
 .mail {
   @media (max-width: $mobile-width) {
-    padding-left: 47px;
+    padding-left: 24px;
   }
+}
 
+.mail a {
   &::before {
     background-image: url("../img/icon-mail.svg");
     width: 26px;
     height: 20px;
-    top: 1px;
-    left: -41px;
+    top: 7px;
+    left: 7px;
 
     @media (max-width: $tablet-width) {
-      top: 2px;
+      top: 8px;
+      left: 6px;
     }
 
     @media (max-width: $mobile-width) {
@@ -107,24 +143,26 @@
   }
 }
 
-.phone {
-  @media (max-width: $mobile-width) {
-    padding-left: 25px;
-  }
+// .phone {
+//   @media (max-width: $mobile-width) {
+//     padding-left: 25px;
+//   }
+// }
 
+.phone a {
   &::before {
     background-image: url("../img/icon-phone.svg");
     width: 22px;
     height: 24px;
-    top: -3px;
-    left: -38px;
+    top: 3px;
+    left: 40px;
 
     @media (max-width: $tablet-width) {
-      left: -37px;
+      left: 38px;
     }
 
     @media (max-width: $mobile-width) {
-      left: -13px;
+      left: 59px;
     }
   }
 }

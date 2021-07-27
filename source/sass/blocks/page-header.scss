@@ -85,11 +85,12 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     width: 50%;
-    min-height: 568px;
     background-color: $white;
     border-bottom: none;
+    overflow-y: scroll;
     z-index: 2;
     top: 0;
+    bottom: 0;
     right: 0;
     margin-left: auto;
     margin-right: 0;
@@ -114,6 +115,8 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
     margin-top: 71px;
   }
 }

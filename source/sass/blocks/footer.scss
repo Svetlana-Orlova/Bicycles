@@ -52,36 +52,6 @@
   }
 }
 
-// .page-footer__item a {
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     background-color: transparent;
-//     background-repeat: no-repeat;
-//     background-size: 100%;
-//     background-position: center;
-//   }
-
-//   @media (max-width: $mobile-width) {
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-top: 11px;
-//   }
-// }
-
-// .page-footer__item:not(:first-child) {
-//   margin-left: 128px;
-
-//   @media (max-width: $tablet-width) {
-//     margin-left: 130px;
-//   }
-
-//   @media (max-width: $mobile-width) {
-//     margin-left: auto;
-//     margin-top: 24px;
-//   }
-// }
-
 .page-footer__item a {
   position: relative;
   color: $black;
@@ -142,12 +112,6 @@
     }
   }
 }
-
-// .phone {
-//   @media (max-width: $mobile-width) {
-//     padding-left: 25px;
-//   }
-// }
 
 .phone a {
   &::before {
